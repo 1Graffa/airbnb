@@ -28,22 +28,20 @@ header{
                 li{
                 padding: $paddingHeader;
                 color: $white;
-                i{
-                    padding-right: 10px;
+                    i{
+                        padding-right: 10px;
                     }
-                .border-user{
-                padding: 10px 0;
-                text-align: center;
-                width: 80px;
-                border-radius: 50px;
-                background-color:$white;
-                i{
-                    color:$light-black;
-                }
-                }
-                
-                }
-                
+                    .border-user{
+                        padding: 10px 0;
+                        text-align: center;
+                        width: 80px;
+                        border-radius: 50px;
+                        background-color:$white;
+                        i{
+                            color:$light-black;
+                        }
+                    }
+                }  
             }
         }
     }
