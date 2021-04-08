@@ -1,0 +1,129 @@
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid black;
+  margin: 18px 24px 0 0;
+}
+
+.button-search {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #FF385C;
+  border-radius: 50px;
+  color: #ffffff;
+}
+.button-search:hover {
+  background-color: #D90865;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+header {
+  font-size: 14px;
+  background-color: #000000;
+}
+header .header-bar {
+  padding-top: 30px 0;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-bar .header-menu {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-bar ul {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header .header-bar ul li a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 20px;
+}
+header .header-bar ul li i {
+  font-size: 30px;
+}
+header .header-bar ul li .button-profile {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-bar .header-right ul {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-bar .header-right ul li {
+  padding: 0 20px;
+  color: #ffffff;
+}
+header .header-form ul {
+  position: relative;
+  bottom: -40px;
+  height: 80px;
+  margin: 0 auto;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 50px;
+  justify-content: space-evenly;
+  width: 80%;
+}
+header .header-form ul li:not(:last-child) {
+  border-right: 1px solid lightgrey;
+}
+header .header-form ul li {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 24%;
+}
+header .header-form ul li:hover {
+  background-color: lightgrey;
+  border-radius: 50px;
+}
+header .header-form ul li .search-inputs {
+  float: left;
+  vertical-align: baseline;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .header-form ul li .search-inputs input {
+  background-color: transparent;
+  border: none;
+  display: block;
+  outline: none;
+}
+header .header-form ul li .button-search {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+}

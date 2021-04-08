@@ -1,0 +1,11 @@
+@mixin flex($justify:center, $align:center, $direction:row){
+    flex-direction: $direction;
+    display: flex;
+    justify-content: $justify ;
+    align-items: $align ;
+}
+@mixin flex-baselie($justify:center, $align:baseline, $direction:row){
+    flex-direction: $direction;
+    display: flex;
+    justify-content: $justify ;
+}
