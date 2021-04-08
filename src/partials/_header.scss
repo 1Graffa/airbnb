@@ -19,24 +19,35 @@ header{
                     padding: $paddingHeader;
                 }
                 i{
-                    font-size: 30px;
-                }
-                .button-profile{
-                    @include flex;
+                    font-size: 20px;
                 }
             }
         }
         .header-right{
             ul{
-                @include flex;
                 li{
                 padding: $paddingHeader;
                 color: $white;
+                i{
+                    padding-right: 10px;
+                    }
+                .border-user{
+                padding: 10px 0;
+                text-align: center;
+                width: 80px;
+                border-radius: 50px;
+                background-color:$white;
+                i{
+                    color:$light-black;
                 }
+                }
+                
+                }
+                
             }
         }
     }
-    .header-form{
+    .#{&}-form{
         ul{
             position: relative;
             bottom: -40px;
@@ -44,43 +55,41 @@ header{
             margin: 0 auto;
             list-style: none;
             background-color: $white;
-            border:1px solid black;
+            border:1px solid $black;
             border-radius: 50px;
-            justify-content: space-evenly;
             width: 80%;
             li:not(:last-child){
-                border-right: 1px solid lightgrey;
+                border-right: 1px solid $dark-white;
             }
             li{
                 position: relative;
                 float: left;
                 height: 100%;
-                width: 24%;
+                width: 25%;
                 &:hover{
-                background-color: lightgrey;
+                background-color:$dark-white;
                 border-radius: 50px;
                 }
                 .search-inputs{
                     float: left;
-                    vertical-align: baseline;
                     position: relative;
                     top:50%;
                     left:50%;
                     transform: translate(-50%, -50%);
+                    label{
+                        font-weight: bolder;
+                    }
                     input{
-                    background-color: transparent;
-                    border: none;
-                    display: block;
-                    outline: none;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
                     }
                 }
                 .button-search{
                     position: absolute;
                     top : -10%;
-                    right: -10%;
-                    
+                    right: -5%;
                 }
-                
             }
         }
     }

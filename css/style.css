@@ -65,23 +65,24 @@ header .header-bar ul li a {
   padding: 0 20px;
 }
 header .header-bar ul li i {
-  font-size: 30px;
-}
-header .header-bar ul li .button-profile {
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .header-bar .header-right ul {
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 20px;
 }
 header .header-bar .header-right ul li {
   padding: 0 20px;
   color: #ffffff;
+}
+header .header-bar .header-right ul li i {
+  padding-right: 10px;
+}
+header .header-bar .header-right ul li .border-user {
+  padding: 10px 0;
+  text-align: center;
+  width: 80px;
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+header .header-bar .header-right ul li .border-user i {
+  color: #808080;
 }
 header .header-form ul {
   position: relative;
@@ -90,40 +91,40 @@ header .header-form ul {
   margin: 0 auto;
   list-style: none;
   background-color: #ffffff;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 50px;
-  justify-content: space-evenly;
   width: 80%;
 }
 header .header-form ul li:not(:last-child) {
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #d3d3d3;
 }
 header .header-form ul li {
   position: relative;
   float: left;
   height: 100%;
-  width: 24%;
+  width: 25%;
 }
 header .header-form ul li:hover {
-  background-color: lightgrey;
+  background-color: #d3d3d3;
   border-radius: 50px;
 }
 header .header-form ul li .search-inputs {
   float: left;
-  vertical-align: baseline;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+header .header-form ul li .search-inputs label {
+  font-weight: bolder;
+}
 header .header-form ul li .search-inputs input {
   background-color: transparent;
   border: none;
-  display: block;
   outline: none;
 }
 header .header-form ul li .button-search {
   position: absolute;
   top: -10%;
-  right: -10%;
+  right: -5%;
 }
